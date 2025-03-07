@@ -13,3 +13,4 @@ google-generativeai
 textwrap3
 python-dotenv
 openai
+google-genai
