@@ -1,0 +1,25 @@
+# Ignore environment variables and secrets
+.env
+
+# Ignore Python cache files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Ignore virtual environments
+venv/
+.env/
+*.venv
+
+# Ignore Streamlit and temporary files
+.streamlit/
+research_report.pdf
+
+# Ignore logs and temporary files
+*.log
+*.tmp
+.DS_Store
+
+# Ignore Jupyter Notebook checkpoints (if any)
+.ipynb_checkpoints/
