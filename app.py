@@ -6,16 +6,21 @@ from agno.models.google import Gemini
 from agno.tools.arxiv import ArxivTools
 from agno.tools.duckduckgo import DuckDuckGoTools
 from fpdf import FPDF
+import os
+from dotenv import load_dotenv
 
 
 # Streamlit UI
 st.title("🔍 AI-Powered Research Bot")
 st.subheader("Powered by Gemini & AI Research Tools")
 
-# API Key Input
-api_key = st.text_input("Enter your Gemini API Key:", type="password")
+
+# Load API Key from .env
+load_dotenv()
+api_key = os.getenv("GEMINI_API_KEY")
+
 if not api_key:
-    st.warning("Please enter an API key to proceed.")
+    st.warning("API key not found! Please add your Gemini API key to a `.env` file.")
     st.stop()
 
 # User Input for Research Topic
