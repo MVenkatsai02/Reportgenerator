@@ -32,7 +32,7 @@ ai-powered-research-bot/
 ### 1️⃣ Clone the Repository
 
 ```bash
-git clone https://github.com/your-repo/ai-powered-research-bot.git
+git clone https://github.com/MVenkatsai02/Reportgenerator
 cd ai-powered-research-bot
 ```
 
