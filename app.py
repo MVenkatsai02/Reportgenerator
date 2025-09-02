@@ -15,9 +15,8 @@ st.title("🔍 AI-Powered Research Bot")
 st.subheader("Powered by Gemini & AI Research Tools")
 
 
-# Load API Key from .env
-load_dotenv()
-api_key = os.getenv("GEMINI_API_KEY")
+# Load API Key from st secrets
+api_key = st.secrets["GEMINI_API_KEY"]
 
 if not api_key:
     st.warning("API key not found! Please add your Gemini API key to a `.env` file.")
